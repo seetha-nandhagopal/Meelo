@@ -1,0 +1,37 @@
+#services {
+    background-color:black;
+}
+
+#services h2.entry-title,
+#services p.page-description {
+    color: #fff;
+}
+
+.service-holder:after {
+    content: "";
+    display: block;
+    clear: both;    
+}
+
+.service-txt {
+    color: #fff;
+    max-width: 280px;
+}
+
+.service-txt h4 {
+    font-family: 'Roboto', sans-serif;    
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.service-num{
+    width: 50px;
+    height:50px;
+}
+.service-num .p{
+    width: 50px;
+    height:50px;
+
+}
