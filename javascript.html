@@ -1,0 +1,97 @@
+<html>
+<script>
+ // push array // -->
+var myName= ["seetha"];
+myName.push(["ammu"]);
+console.log (myName);
+
+var myArray = [["john",23], ["ravi",19]];
+var removedFromMyArray = myArray.pop();
+console.log (myArray);
+
+var myArray = [["john",23], ["ravi",19]];
+myArray.unshift(["seetha",8]);
+console.log (myArray);
+
+function myReusableFunction() {
+    console.log ("Hello world");
+}
+myReusableFunction();
+myReusableFunction();
+myReusableFunction();
+
+//function with arguments
+
+function myFunctionArgument(a,b){
+    console.log(a-b);
+    console.log(a*b);
+}
+myFunctionArgument(9,5)
+
+//global scope and fuction 
+
+var myGlobal =9 ;
+function fun1()
+{
+var oopsGlobal=10;
+}
+function fun2()
+{
+    var output ="";
+    if (typeof myGlobal == "undefined"){
+        output+= "myGlobal: "+myGlobal;
+    }
+    if (typeof oopsGlobal != "undefined"){
+        output+= "oopsGlobal: "+ oopsGlobal;
+    }
+    else
+output+= "false";
+console.log (output);
+
+}
+fun1();
+fun2();
+
+//local scope and function
+function myLocalScope(){
+    var myVar=5;
+    console.log (myVar);
+}
+myLocalScope();
+myLocalScope();
+
+//local vs global variable
+
+var myCollege = "Sindhi";
+function mySchool() {
+    var myCollege ="Mctm";
+    return myCollege;
+}
+console.log (myCollege);
+console.log (mySchool());
+
+//Return a value from function with Return//
+function minusSevan (num){
+    return num -7;
+}
+console.log (minusSevan (10));
+
+function myMultiple(num){
+    return num *3;
+}
+console.log(myMultiple(10));
+
+//understanding undefined value returned from a function//
+var sum=0;
+function addOne(){
+    sum+=1;
+}
+function addTwo(){
+    sum+=2;
+}
+console.log(addOne());
+
+
+</script>
+</html>
+
